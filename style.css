@@ -1,0 +1,280 @@
+body {
+    background: url(body_background.jpg);
+}
+
+.wrap {
+    min-height: 100%;
+}
+
+.header {
+    position: relative;
+    background: url(header.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 85%;
+    box-shadow: 10px 10px 10px gray;
+	border-radius: 10px;
+}
+.header h2 {
+    padding-left: 80px;
+    font-size: 30px;
+    font-family: monotype corsiva;
+}
+.header p {
+    padding-left: 300px;
+}
+#logo{
+    width: 25%;
+}
+
+
+.main_content {
+    position: relative;
+    left: 7.5%;
+    margin-top: 20px;
+    max-width: 85%;
+    padding-bottom: 150px;
+    overflow: auto;
+}
+
+
+.menu {
+    overflow: hidden;
+    font-family:Franklin Gothic Medium;
+    background-color: #4d4d4d;
+}
+.menu a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.active {
+    background-color: #d2a679;
+}
+.lemenu {
+    float: left;
+    overflow: hidden;
+}
+.lemenu .lemenubtn {
+    font-size: 20px; 
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.lemenu-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.lemenu-content a {
+    float: none;
+    font-size: 16px;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.menu a:hover, .lemenu:hover .lemenubtn {
+    background-color: #d2a679;
+    color: black;
+}
+.lemenu-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.lemenu:hover .lemenu-content {
+    display: block;
+}
+
+
+.content {
+    box-sizing: border-box;
+    float: left;
+    width: 75%;
+    padding: 20px;
+    opacity: 0.95;
+    font-size: 18px;
+    text-align: justify;
+    background: linear-gradient(#bf8040, #dfbf9f)
+}
+
+
+.aside {
+    box-sizing: border-box;
+    float: left;
+    width: 25%;
+    opacity: 0.97;
+    background-color: #86592d;
+    color: white;
+    padding: 20px 10px 25px 25px;
+    min-height: 100%;
+    height: 100%;
+}
+.partnerek {
+    display: block;
+    width: 40%;
+}
+
+
+.indeximage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 350px;
+    width: 600px;
+}
+
+
+h2.intro::first-letter {
+    font-size:150%;
+} 
+h2.intro::first-line {
+    font-variant: small-caps;
+}
+
+
+.container {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.image-main-section {
+    display:inline-block;
+    width: 30%;
+    text-align: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+.img-part {
+    border-radius: 5px;
+    box-sizing: content-box;
+    margin:0;
+    border:3px solid #DDDDDD;
+    background-color: #fff;
+    width: 100%;
+}
+.img-section {
+    padding: 5px;
+}
+.img-section img {
+    width: 100%;
+}
+.image-title h3 {
+    margin:0px;
+    color:#4C4C4C;
+    text-align: center;
+}
+.image-description p {
+    color:#848484;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.footer {
+    position: relative;
+    margin-top: -150px;
+    left: 7.5%;
+    background-color: #4d2600;
+    color: white;
+    text-align: center;
+    max-width: 83.5%;
+    padding: 10px;
+}
+
+
+.indextable {
+    border: 3px solid white;
+    text-align: center;
+}
+.indextable thead {
+    font-weight: bold;
+    color: white;
+}
+.indextable tbody {
+    font-style: italic;
+    color: white;
+}
+.tablehead {
+    background-color: #804000;
+}
+.sor1 {
+    background-color: #bf8040;
+}
+.sor2 {
+    background-color: #cc6600;
+}
+
+
+.infotable {
+    text-align: center;
+    margin: auto;
+}
+.content iframe {
+    width: 450px;
+    height: 450px;
+    border: 0;
+}
+
+
+.kiemelés {
+    text-align: center;
+    color: red;
+}
+.igazítás {
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .content {
+        background: white;
+    }
+    .aside, .footer {
+        display: none;
+    }
+}
+@media print {
+    @page {
+        margin: 2cm;
+    }
+    .header, .footer, .menu, .aside {  
+        display: none;  
+    }
+    body {
+        color: black; 
+        background-color: white;
+        border: 1px solid black;
+    }
+    img {
+        page-break-inside: avoid;
+    }
+    h2 {
+        page-break-before: always;
+    }
+    table {
+        page-break-inside: avoid; 
+        font-size: 8pt;
+    }
+}
+
+
+.error {
+    color: #FF0000;
+}
