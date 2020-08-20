@@ -1,2 +1,2 @@
 # softpaws-dogshelter
-Webpage for Softpaws dog shelter in PHP
+Webpage for an imaginary Softpaws dog shelter in PHP.
